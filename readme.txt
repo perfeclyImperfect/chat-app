@@ -1,6 +1,7 @@
 To start:
--Open the folder to a code editor (VS Code)
--Open terminal
+-clone the repository (https://github.com/perfeclyImperfect/chat-app.git)
+-open folder to a code editor (VS code)
+-open terminal
 -cd backend
 -npm install
 -npm start
