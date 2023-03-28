@@ -1,0 +1,112 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.joinOuterContainer {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16.1px);
+  border: 1px solid rgba(120, 114, 114, 0.32);
+  background: #f1f7fe;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  gap: 2em;
+}
+
+.joinInnerContainer {
+  width: 300px;
+}
+
+.joinInput {
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 1em #525252;
+  padding: 1.1em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.joinInput::placeholder {
+  padding: 30px;
+}
+
+.userIcon {
+  position: absolute;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.doorIcon {
+  position: absolute;
+  font-size: 35px;
+  margin-left: 17px;
+  margin-top: 18px;
+}
+
+.heading {
+  color: black;
+  font-size: 2.5em;
+}
+
+.instructions {
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+  width: 345px;
+}
+
+.signInBtn {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+  background: #f9e4cb;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.signInBtn:active {
+  background: #c9b9a4;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+
+button:focus {
+  outline: 0;
+}

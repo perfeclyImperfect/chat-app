@@ -1,0 +1,68 @@
+.infoBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 2px solid #5f5f5f;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  backdrop-filter: blur(3px);
+  z-index: 10;
+}
+
+.leftInnerContainer {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  color: black;
+}
+
+.rightInnerContainer {
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.onlineIcon {
+  margin-right: 5%;
+}
+
+.usersNameList {
+  display: none;
+  position: absolute !important;
+  right: 14%;
+  top: 6vh;
+  z-index: 10;
+  opacity: 100%;
+  width: 100px;
+  box-shadow: rgba(45, 45, 45, 0.3) 0px 19px 38px, rgba(49, 49, 49, 0.22) 0px 15px 12px;
+  background-color: rgba(249, 228, 203, 0) !important;
+}
+.usersNameBox {
+  display: none;
+  color: black !important;
+  background-color: #f9e4cb69 !important;
+}
+/* Hide the button by default */
+.usersBoxBtn {
+  display: none;
+  margin-right: 20px;
+  font-size: 25px;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .usersBoxBtn {
+    display: block; /* show the button */
+  }
+  .usersNameList {
+    display: block; /* show the button */
+  }
+  .usersNameBox {
+    display: block; /* show the button */
+  }
+}
